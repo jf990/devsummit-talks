@@ -28,47 +28,10 @@
 
 ### AppStudio Developer Edition
 
-- product overview
-- why use it?
-  - builds on ArcGIS
-  - native app with no code
-  - very little code
-  - you can customize it if you want more/full control
-- built on the Runtime SDK for Qt, giving you the full power
-
----
-
-<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
-
-### Get started
-
-1. Prerequisites
-
-- a decent development machine, macOS, Windows 10, Linux
-- Qt SDK from qt.io
-- ArcGIS Runtime SDK for Qt from developers.arcgis.com
-- AppStudio Developer Edition from esri.com
-
-1. Download for macOS, Windows, Linux
-https://www.esri.com/en-us/arcgis/products/appstudio-for-arcgis/resources
-
-1. Install
-
-- Install Qt Creator
-- Install ArcGIS Runtime SDK for Qt
-- Install AppStudio
-
-1. Start app, create new app
-
-- Select **New app**
-- Choose **Hello World (Runtime)**
-- Give your app a name: **Starter app**
-- Click **Create**
-
-1. Edit the code!
-
-- Select **Edit {;}**
-- launches Qt Creator (or Visual Studio Code)
+* Low code solution for creating native location-based apps
+* using ArcGIS
+* using ArcGIS Runtime SDK for Qt
+* Cross-platform (mac, windows, linux desktops, ios, android)
 
 ---
 
@@ -76,44 +39,228 @@ https://www.esri.com/en-us/arcgis/products/appstudio-for-arcgis/resources
 
 ### AppStudio Developer Edition
 
-- review the templates
-- how to get started
-- review the Desktop app, what can be done with it, customization options
+* AppStudio attempts to address:
+   - using ArcGIS across native devices
+   - with a single codebase
+   - providing templates to address the most common mapping use cases
+   - low code customization
+   - leveraging Qt/QML to customize to the max, even starting from scratch
+   - build for all devices in the cloud and download the final app bundle
 
 ---
 
-<!-- .slide: data-background="../../template/img/2019/devsummit/bg-4.png" -->
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
 
-## DEMO #1
+### Native app development
 
-- show desktop app
-- pick a template
-- customize it
-- build the app and run it in the player
-
----
-
-<!-- .slide: data-background="../../template/img/2019/devsummit/bg-6.png" -->
-
-## Customizing apps
-
-- intro to Qt
-- intro to QML
-- intro to Runtime Qt
-- show some customization code with QML, JavaScript, Runtime
+* performance
+* development tooling
+* online and offline
+* access to the device capabilities (camera gps low-level native APIs)
+* deploy to app store
 
 ---
 
-<!-- .slide: data-background="../../template/img/2019/devsummit/bg-4.png" -->
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
 
-## Demo #2
+### Native app development
 
-- show some customization code with QML, JavaScript, Runtime
-- build and run the app in player
+...but native is hard
+
+* lower level means higher knowledge
+* bigger foot guns
+* much more code
+* cross platform options
+   * separate codebase (and dev team) per target platform: Swift, Java, Kotlin, C#
+   * flutter, ionic, react native: OK, javascript, but still have to code separately for device control
+   * Xamarin: C#/.NET
 
 ---
 
-<!-- .slide: data-background="../../template/img/2019/devsummit/bg-6.png" -->
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### Who is the target user for AppStudio?
+
+- _GIS Professional_ who wants to config an app
+   - appstudio has templates with config
+   - fonts, icons, colors, settings
+   - test on multiple devices
+   - share with enterprise users
+   - deploy to app stores
+
+- _Casual developer_ who wants simple location, write a customize app
+
+- _Professional developer_ comfortable with Qt/QML
+
+*** In general, AppStudio + QML makes it easier to write and deploy native apps
+_less code_
+_easier_
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### ArcGIS integration
+
+- Runtime SDK for Qt
+- ArcGIS Online/Enterprise
+
+Bring the power of ArcGIS to your app
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### What has been built with AppStudio?
+
+- Survey 123
+- Quick capture
+- ArcGIS Companion
+- Esri support app
+- Esri labs projects - show a few screenshots
+- Esri professional services - show a few screenshots
+- Customer apps - show a few screenshots
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+
+### Productivity tools (stuff you get when you install it)
+
+- download for free, install on mac win linux
+- desktop app
+- app templates
+- app samples
+- enterprise templates
+- appstudio player
+- cloud make
+- Qt Creator
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### caveats
+
+1. Qt Creator dup if you install Qt separately
+2. ArcGIS Runtime SDK for Qt is installed separately
+3. No C++
+4. No kits - use Cloud Make
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### Cost and License
+
+* it's actually free to download and start developing
+* two levels:
+   - App Studio
+      - All the tools
+      - distribute apps at the Runtime Lite level
+      - deploy apps with ArcGIS Online/Enterprise
+   - App Studio Developer Editions
+      - unlock with account login
+         - ArcGIS Online entitlement
+         - Developer Builder plan
+      - All the tools PLUS Cloud make
+      - Enterprise templates and source code
+      - distribute apps Runtime license key
+      - deploy apps with ArcGIS Online/Enterprise and app stores
+* follows ArcGIS Runtime licensing
+* requires either an Org License OR a Developer Builder plan (or higher)
+
+= show the Org licensing page screenshot
+= show the developer account Builder page and PAYG credits
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### Demo #1 AppStudio desktop app
+
+- run the AppStudio desktop app
+- login, explain "developer edition"
+- show and explain the available templates
+- show the available enterprise apps
+- show the available samples
+- create a template app
+- demo tool palette: files, duplicate, delete, edit, run, settings
+- demo the basic template how it works
+- demo changing some app settings (color, font, title) = use settings app
+- run the app on desktop only.
+== Should we do a cloud make and demo how that all works?
+= demo offline map package?
+= be sure to share all maps public!
+
+Player is available from app stores
+Source code to AppStudio player is available, you can customize it!
+LINK?
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### What about QML?
+
+- what is Qt? slide on Qt background, history
+- what is QML?
+- how does JavaScript fit in all this?
+- quick show of Qt/QML doc pages
+- QML learning resources
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### ArcGIS Runtime SDK for Qt
+
+- show landing page
+- Guide
+- Samples
+- API Reference
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### AppStudio Extend Apps
+
+- go over some of the doc pages
+
+- Explain how to license
+  - Developer Essentials plan with Runtime Lite license
+  - Developer Builder plan with Runtime Basic license
+  - ArcGIS Online Org with AppStudio Developer Edition
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### Project structure
+
+- review project structure
+- images
+- assets
+- QML files
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### Demo #2
+
+- let's build a simple app with some cool ArcGIS features
+- web map
+- toolbar
+- place search +suggestions (use Nearby?)
+
+Run it
+
+---
+
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
 
 ## Deployment
 
@@ -123,16 +270,29 @@ https://www.esri.com/en-us/arcgis/products/appstudio-for-arcgis/resources
 
 ---
 
-<!-- .slide: data-background="../../template/img/2019/devsummit/bg-4.png" -->
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
 
 ## Demo #3
 
 - Cloud Make the app we were demoing
 - deploy it on some devices
 
+- Cloud Make it
+
+- Run it on device?
+- offline?
+- device features?
+
 ---
 
-<!-- .slide: data-background="../../template/img/2019/devsummit/bg-5.png" -->
+<!-- .slide: style="line-height: 4rem;" data-background="../../template/img/2019/devsummit/bg-6.png" -->
+
+### Closing slides
+
+- there's a lot here
+- play with the samples
+- get on GeoNet
+- visit us at the booth
 
 ### How do I get it?
 
